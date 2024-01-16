@@ -173,8 +173,7 @@ span {
 /* popular section start */
 .popular {
     width: 81%;
-    height: 550px;
-    margin: 50px auto;
+    margin: 80px auto;
 
 }
 
@@ -191,12 +190,11 @@ span {
 
 }
 
-
 .popular h2 {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
 }
 
@@ -205,7 +203,7 @@ span {
     font-size: 1rem;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 
 
 }
@@ -259,7 +257,7 @@ span {
 
 .destination {
     width: 81%;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 
@@ -353,9 +351,9 @@ span {
     .destination h2{
         font-size: 1.5rem;
     }
-    .img-container{
-       display:grid;
-       
+    .img-container {
+      display: block;
     }
+    
     
 }
