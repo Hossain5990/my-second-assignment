@@ -79,7 +79,7 @@ span {
 
 .banner {
     display: flex;
-    flex-direction: colum;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -219,7 +219,8 @@ span {
     border-radius: 8px;
     background: #FF5400;
     border: 0;
-   
+    margin-bottom: 20px;
+
 
 }
 
@@ -231,6 +232,8 @@ span {
 .popular-img img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 @media screen and (max-width:600px) {
@@ -279,7 +282,7 @@ span {
     margin-top: 0;
     margin-bottom: 40px;
 }
-    
+
 
 
 
@@ -348,14 +351,343 @@ span {
 
 
 }
-@media screen and (max-width:600px){
-    .destination h2{
+
+@media screen and (max-width:600px) {
+    .destination h2 {
         font-size: 1.5rem;
     }
+
     .img-container {
-      display: block;
+        display: block;
+    }
+    .img-container img {
+        height: 11rem;
+    }
+
+
+}
+
+/* destination end */
+/* choose start */
+.choose {
+    width: 81%;
+    margin: 80px auto;
+}
+
+.choose-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.choose-text h2 {
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+}
+
+.choose-text {
+    width: 48%;
+}
+
+.choose-text p {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+}
+
+
+.choose .choose-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 24px;
+
+}
+
+
+.choose-item-1 {
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+
+
+
+}
+
+.choose-item-2 {
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+}
+
+.choose-item-3 {
+    width: 48%;
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.choose-item-1 p,
+.choose-item-2 p,
+.choose-item-3 p {
+    text-align: start;
+}
+
+@media screen and (max-width:600px) {
+    .choose-item {
+        flex-direction: column;
+    }
+
+    .choose-item-1,
+    .choose-item-2,
+    .choose-item-3 {
+        width: 90%;
+    }
+
+    .choose-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .choose-text p {
+        font-size: .8rem;
+
+    }
+
+}
+
+/* choose end */
+/* newsleter start */
+.newsletter {
+    width: 81%;
+    margin: 80px auto;
+
+}
+
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.containt {
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.image {
+
+    width: 60%;
+    height: 422px;
+    border-radius: 16px;
+    background: url('../Images/Rectangle\ 8\ \(1\).png'), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;   
+}
+
+.image .discount-tag {
+    width: 18.25rem;
+    height: 7.5rem;
+    border-radius: 16px;
+    background: #FF5400;
+    transform: rotate(-19.628deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    margin-right: .2rem;
+}
+
+.image .discount-tag p {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.image .discount-tag b {
+    font-size: 2rem;
+    color: #FFF;
+    font-weight: 800;
+    text-align: center;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.text {
+    width: 90%;
+}
+.horaijontal1 {
+    width: 90%;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+}
+
+.containt h3 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+
+
+}
+
+.containt p {
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+#new-input {
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 16px;
+    font-weight: 400;
+    width: 90%;
+    height: 52px;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+.new-button {
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    width: 90%;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: none;
+    margin-top: 0;
+    margin-bottom: 20px;
+
+}
+@media screen and (max-width:600px){
+    .newsletter{
+        flex-direction: column;
+    }
+    .containt{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
     }
     
-    
 }
-/* destination end */
+/* end newsletter */
+
+
+
+/* footer start  */
+.footer {
+    width: 100%;
+    height: 502px;
+    background: rgba(19, 19, 24, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-containt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 16px;
+
+}
+
+.footer-containt h3 {
+    color: #131318;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+span {
+    color: #ff5400;
+
+
+}
+
+.footer-para {
+    width: 70%;
+}
+
+.footer-para p {
+    color: #5A5A5D;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.horaijontal {
+    width: 80%;
+    height: 1px;
+}
+
+.footer-last {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-last p {
+    color: #131318;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+/* footer end */
